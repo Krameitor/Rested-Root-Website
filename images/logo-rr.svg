@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <clipPath id="circle-clip">
+      <circle cx="24" cy="24" r="23"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background circle in burgundy -->
+  <circle cx="24" cy="24" r="23" fill="#4E0E24"/>
+
+  <!-- Subtle pattern overlay — leaf veins -->
+  <g clip-path="url(#circle-clip)" opacity="0.18" fill="none" stroke="#F7CB60" stroke-width="0.5">
+    <line x1="24" y1="4" x2="24" y2="44"/>
+    <line x1="4" y1="24" x2="44" y2="24"/>
+    <line x1="10" y1="10" x2="38" y2="38"/>
+    <line x1="38" y1="10" x2="10" y2="38"/>
+    <circle cx="24" cy="24" r="10"/>
+    <circle cx="24" cy="24" r="17"/>
+  </g>
+
+  <!-- Stylized root/tree motif -->
+  <!-- Main trunk -->
+  <path d="M24 30 Q23 26 22 22 Q21 18 24 15 Q27 18 26 22 Q25 26 24 30Z" fill="#F7CB60" opacity="0.9"/>
+  <!-- Left root -->
+  <path d="M24 30 Q20 32 17 35 Q15 37 13 36" fill="none" stroke="#F7CB60" stroke-width="1.5" stroke-linecap="round" opacity="0.85"/>
+  <!-- Right root -->
+  <path d="M24 30 Q28 32 31 35 Q33 37 35 36" fill="none" stroke="#F7CB60" stroke-width="1.5" stroke-linecap="round" opacity="0.85"/>
+  <!-- Center root down -->
+  <path d="M24 30 Q24 33 24 37" fill="none" stroke="#F7CB60" stroke-width="1.5" stroke-linecap="round" opacity="0.85"/>
+  <!-- Left sub-root -->
+  <path d="M17 35 Q15 38 12 39" fill="none" stroke="#F7CB60" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+  <!-- Right sub-root -->
+  <path d="M31 35 Q33 38 36 39" fill="none" stroke="#F7CB60" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+  <!-- Left branch -->
+  <path d="M23 20 Q19 17 16 16" fill="none" stroke="#F7CB60" stroke-width="1.2" stroke-linecap="round" opacity="0.75"/>
+  <!-- Right branch -->
+  <path d="M25 20 Q29 17 32 16" fill="none" stroke="#F7CB60" stroke-width="1.2" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- Thin gold border ring -->
+  <circle cx="24" cy="24" r="22.5" fill="none" stroke="#F7CB60" stroke-width="0.8" opacity="0.5"/>
+</svg>

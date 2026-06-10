@@ -241,20 +241,25 @@ body {
 }
 
 .site-header__logo-img {
-    height: 48px;
-    width: auto;
-    transition: filter var(--transition-base);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    transition: box-shadow var(--transition-base), transform var(--transition-base);
+    flex-shrink: 0;
 }
 
-.site-header--transparent .site-header__logo-img {
-    filter: brightness(0) invert(1);
+.site-header__logo-img:hover {
+    box-shadow: 0 0 0 3px rgba(247, 203, 96, 0.45);
+    transform: scale(1.05);
 }
 
+/* SVG logo never needs colour inversion — it carries its own colours */
+.site-header--transparent .site-header__logo-img,
 .site-header--solid .site-header__logo-img {
-    filter: brightness(0) invert(1);
+    filter: none;
 }
 
-/* On cream-background pages (about, services) the header starts transparent over cream */
+/* On cream-background pages keep it unchanged */
 .page-light .site-header--transparent .site-header__logo-img {
     filter: none;
 }
@@ -516,20 +521,6 @@ body {
         transform: scale(4);
         opacity: 0;
     }
-}
-
-/* ===================================
-   ANNOUNCEMENT BANNER
-   =================================== */
-.announcement-banner {
-    background: linear-gradient(90deg, var(--honey), var(--terra));
-    color: var(--forest);
-    text-align: center;
-    padding: var(--space-xs) var(--space-sm);
-    font-size: var(--fs-nav);
-    font-weight: 600;
-    position: relative;
-    z-index: 100;
 }
 
 /* ===================================
@@ -1447,9 +1438,10 @@ body {
 }
 
 .site-footer__logo-img {
-    height: 40px;
-    width: auto;
-    filter: brightness(0) invert(1);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    filter: none;
 }
 
 .site-footer__logo-text {
