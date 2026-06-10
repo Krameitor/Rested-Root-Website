@@ -1,0 +1,102 @@
+INSTRUCCIONES PARA LAS IMÁGENES
+================================
+
+Coloca las siguientes imágenes en esta carpeta (images/) con estos nombres exactos:
+
+HEADER:
+1. logo-tree.png
+   - Logo del árbol estilizado con raíces prominentes en tonos marrones y verdes
+   - Formato: PNG con fondo transparente
+   - Tamaño recomendado: aproximadamente 50px de alto
+
+HERO SECTION:
+2. tree-hero.png
+   - Ilustración grande de árbol con tronco grueso y raíces en estilo acuarela
+   - Tono marrón para el tronco, verde claro para el follaje
+   - Formato: PNG con fondo transparente o verde claro
+   - Tamaño recomendado: aproximadamente 600px de ancho
+
+OUR PRACTICE SECTION:
+3. palm-leaves-texture.png
+   - Textura de fondo con hojas de palma o follaje denso
+   - Color verde oscuro casi negro
+   - Formato: PNG o JPG
+   - Se usa como fondo de la sección
+
+SERVICES SECTION (4 imágenes de flores):
+4. flower-purple-1.png
+   - Ilustración de flor púrpura con tallo largo y hojas
+   - Para "Workshops"
+   - Formato: PNG con fondo transparente
+   - Tamaño recomendado: aproximadamente 200px de ancho
+
+5. flower-purple-2.png
+   - Ilustración de flor púrpura con tallo largo y hojas
+   - Para "Social Justice Audits"
+   - Formato: PNG con fondo transparente
+   - Tamaño recomendado: aproximadamente 200px de ancho
+
+6. flower-red-purple.png
+   - Ilustración de flor rojo-púrpura con tallo largo y hojas
+   - Para "Public Speaking"
+   - Formato: PNG con fondo transparente
+   - Tamaño recomendado: aproximadamente 200px de ancho
+
+7. flower-dark-purple.png
+   - Ilustración de flor púrpura oscura con múltiples pétalos y hojas
+   - Para "Curriculum"
+   - Formato: PNG con fondo transparente
+   - Tamaño recomendado: aproximadamente 200px de ancho
+
+COLLABORATE SECTION:
+8. branch-illustration.png
+   - Ilustración estilizada de una rama con hojas
+   - Color verde claro/muted
+   - Formato: PNG con fondo transparente
+   - Tamaño recomendado: aproximadamente 300px de ancho
+
+TREE OF CHANGE SECTION:
+9. tree-roots.png
+   - Imagen cuadrada de las raíces de un árbol extendiéndose en el suelo
+   - Estilo acuarela o texturizado con tonos marrones, verdes y púrpuras
+   - Formato: PNG o JPG
+   - Tamaño recomendado: aproximadamente 500x500px
+
+ICONOS PARA TREE OF CHANGE (4 iconos):
+10. acorn-icon.png
+    - Icono de bellota
+    - Para "Seeds of Awareness"
+    - Formato: PNG con fondo transparente
+    - Tamaño recomendado: aproximadamente 50x50px
+
+11. sapling-icon.png
+    - Icono de pequeño árbol/plántula
+    - Para "Saplings of Understanding"
+    - Formato: PNG con fondo transparente
+    - Tamaño recomendado: aproximadamente 50x50px
+
+12. trunk-icon.png
+    - Icono de corte transversal de tronco de árbol
+    - Para "Trunks of our Truth"
+    - Formato: PNG con fondo transparente
+    - Tamaño recomendado: aproximadamente 50x50px
+
+13. root-icon.png
+    - Icono de raíces
+    - Para "Rooted In Embodiment"
+    - Formato: PNG con fondo transparente
+    - Tamaño recomendado: aproximadamente 50x50px
+
+TESTIMONIALS SECTION:
+14. forest-background.png
+    - Imagen de fondo de un bosque con árboles altos y delgados (pinos o similares)
+    - Troncos marrones y follaje verde
+    - Cielo brillante arriba
+    - Formato: PNG o JPG
+    - Tamaño recomendado: al menos 1920px de ancho para fondo completo
+
+NOTAS:
+- Si las imágenes tienen nombres diferentes, puedes renombrarlas O editar index.html y cambiar las rutas
+- Las imágenes se ajustarán automáticamente gracias al CSS responsive
+- Para imágenes de fondo, asegúrate de que tengan buena resolución
+- Las imágenes con fondo transparente funcionan mejor para los iconos y ilustraciones
