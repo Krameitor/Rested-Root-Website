@@ -877,7 +877,8 @@ body {
     width: 120px;
     height: 150px;
     object-fit: contain;
-    filter: brightness(1.2);
+    filter: grayscale(100%) invert(100%) brightness(200%);
+    mix-blend-mode: screen;
 }
 
 .service-card__name {
