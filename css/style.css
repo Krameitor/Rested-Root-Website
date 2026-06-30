@@ -255,8 +255,7 @@ body {
     border-radius: 0;
     transition: opacity var(--transition-base), transform var(--transition-base);
     flex-shrink: 0;
-    /* Black logo inverted to white on dark forest header */
-    filter: invert(1) brightness(2);
+    filter: none;
 }
 
 .site-header__logo-img:hover {
@@ -264,13 +263,11 @@ body {
     transform: scale(1.03);
 }
 
-/* On cream-background pages (page-light), keep logo dark */
 .site-header--transparent .site-header__logo-img,
 .site-header--solid .site-header__logo-img {
-    filter: invert(1) brightness(2);
+    filter: none;
 }
 
-/* On cream-background pages keep logo dark (no invert) */
 .page-light .site-header--transparent .site-header__logo-img {
     filter: none;
 }
