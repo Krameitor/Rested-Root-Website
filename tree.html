@@ -53,8 +53,32 @@
     <section class="tree-stages-section">
         <div class="container">
             <div class="tree-stages__layout">
-                <div class="tree-stages__image reveal-left">
-                    <img src="images/logo-color.png" alt="Tree of Change — roots illustration" class="tree-stages__img">
+                <div class="tree-stages__video reveal-left">
+                    <div class="tree-video-wrapper">
+                        <!-- RESTED ROOT: Replace the YouTube URL below with your own video.
+                             Change 'VIDEO_ID' to your YouTube video ID.
+                             Example: https://www.youtube.com/embed/dQw4w9WgXcQ -->
+                        <iframe
+                            class="tree-video-iframe"
+                            src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1&color=white"
+                            title="Rested Root — Our Story"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                        <!-- Shown only while the video ID is still a placeholder -->
+                        <div class="tree-video-placeholder" id="video-placeholder">
+                            <div class="tree-video-placeholder__inner">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" aria-hidden="true">
+                                    <circle cx="28" cy="28" r="28" fill="rgba(247,203,96,0.15)"/>
+                                    <polygon points="22,18 42,28 22,38" fill="#F7CB60"/>
+                                </svg>
+                                <p class="tree-video-placeholder__text">Our story,<br><em>coming soon.</em></p>
+                                <p class="tree-video-placeholder__hint">Paste your YouTube video URL in <code>tree.html</code> to activate this section.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tree-stages__list stagger-children">
                     <div class="stage-card reveal">
