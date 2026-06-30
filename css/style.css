@@ -1428,9 +1428,9 @@ body {
 
 .tree-stages__layout {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--space-2xl);
-    align-items: start;
+    align-items: start; /* MUST be 'start', never 'center/stretch', for sticky to work */
 }
 
 .tree-stages__image {
@@ -1444,10 +1444,11 @@ body {
     height: auto;
 }
 
-/* Video embed column */
+/* Video embed column — sticky so it stays visible while cards scroll */
 .tree-stages__video {
     position: sticky;
-    top: calc(var(--header-height) + var(--space-lg));
+    top: 90px; /* fixed px value is more reliable than calc() for sticky */
+    align-self: start; /* redundant safety — ensures sticky kicks in */
 }
 
 .tree-video-wrapper {
@@ -1829,6 +1830,11 @@ body {
     .tree-stages__image {
         position: static;
         text-align: center;
+    }
+
+    /* On mobile video is not sticky — it flows normally above the cards */
+    .tree-stages__video {
+        position: static;
     }
 
     .collaborate-form__content {
