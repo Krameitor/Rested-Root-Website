@@ -1825,8 +1825,14 @@ body {
 }
 
 @media (max-width: 968px) {
+    .hero {
+        min-height: auto;
+    }
+
     .hero__content {
-        padding-top: calc(var(--header-height) + var(--space-2xl));
+        min-height: auto;
+        padding-top: calc(var(--header-height) + var(--space-xl));
+        padding-bottom: var(--space-2xl);
     }
 
     .hero__text {
