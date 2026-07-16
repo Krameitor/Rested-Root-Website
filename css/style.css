@@ -1207,7 +1207,7 @@ body {
    =================================== */
 .cta-band {
     padding: var(--space-2xl) 0;
-    background: linear-gradient(135deg, var(--forest) 0%, var(--burgundy) 100%);
+    background: linear-gradient(180deg, var(--forest) 0%, var(--burgundy) 100%);
     text-align: center;
 }
 
