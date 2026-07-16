@@ -2265,13 +2265,8 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 60' preserveAspectRatio='none'%3E%3Cpath d='M0,30 C280,62 520,4 760,26 C1000,46 1120,20 1200,30 L1200,60 L0,60 Z' fill='%23F7CB60'/%3E%3C/svg%3E");
 }
 
-/* Último bloque (CTA) tras una sección crema (Tree of Change, Collaborate):
-   transición en degradado crema → verde → burdeos, SIN ola, igual que el
-   resto de finales de página. */
-.tree-stages-section + .cta-band,
-.testimonial-section + .cta-band {
-    background: linear-gradient(180deg, var(--cream) 0%, var(--forest) 14%, var(--burgundy) 100%);
-}
+/* Todos los CTA finales usan el mismo degradado oscuro verde → burdeos
+   (definido en .cta-band), para que los cierres de página sean idénticos. */
 
 /* Pantallas muy pequeñas: evita que el título del hero se recorte */
 @media (max-width: 400px) {
