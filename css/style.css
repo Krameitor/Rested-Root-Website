@@ -2194,7 +2194,6 @@ body {
 .services-preview:has(+ .tree-teaser),
 .tree-teaser:has(+ .testimonial-section),
 .testimonial-section:has(+ .who-we-are),
-.testimonial-section:has(+ .cta-band),
 .about-mission:has(+ .about-values),
 .page-hero--cream:has(+ .service-detail--forest),
 .service-detail--forest:has(+ .service-detail--cream),
@@ -2202,7 +2201,6 @@ body {
 .service-detail--burgundy:has(+ .service-detail--honey),
 .service-detail--honey:has(+ .service-detail--forest),
 .tree-page-hero:has(+ .tree-stages-section),
-.tree-stages-section:has(+ .cta-band),
 .collaborate-hero:has(+ .collaborate-form-section) {
     position: relative;
 }
@@ -2214,7 +2212,6 @@ body {
 .services-preview:has(+ .tree-teaser)::after,
 .tree-teaser:has(+ .testimonial-section)::after,
 .testimonial-section:has(+ .who-we-are)::after,
-.testimonial-section:has(+ .cta-band)::after,
 .about-mission:has(+ .about-values)::after,
 .page-hero--cream:has(+ .service-detail--forest)::after,
 .service-detail--forest:has(+ .service-detail--cream)::after,
@@ -2222,7 +2219,6 @@ body {
 .service-detail--burgundy:has(+ .service-detail--honey)::after,
 .service-detail--honey:has(+ .service-detail--forest)::after,
 .tree-page-hero:has(+ .tree-stages-section)::after,
-.tree-stages-section:has(+ .cta-band)::after,
 .collaborate-hero:has(+ .collaborate-form-section)::after {
     content: "";
     position: absolute;
@@ -2251,11 +2247,9 @@ body {
 /* -- ola hacia FOREST (#21322C) -- */
 .about-mission--home:has(+ .pillars)::after,
 .testimonial-section:has(+ .who-we-are)::after,
-.testimonial-section:has(+ .cta-band)::after,
 .about-mission:has(+ .about-values)::after,
 .page-hero--cream:has(+ .service-detail--forest)::after,
-.service-detail--honey:has(+ .service-detail--forest)::after,
-.tree-stages-section:has(+ .cta-band)::after {
+.service-detail--honey:has(+ .service-detail--forest)::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 60' preserveAspectRatio='none'%3E%3Cpath d='M0,30 C280,62 520,4 760,26 C1000,46 1120,20 1200,30 L1200,60 L0,60 Z' fill='%2321322C'/%3E%3C/svg%3E");
 }
 
@@ -2269,6 +2263,14 @@ body {
 /* -- ola hacia HONEY (#F7CB60) -- */
 .service-detail--burgundy:has(+ .service-detail--honey)::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 60' preserveAspectRatio='none'%3E%3Cpath d='M0,30 C280,62 520,4 760,26 C1000,46 1120,20 1200,30 L1200,60 L0,60 Z' fill='%23F7CB60'/%3E%3C/svg%3E");
+}
+
+/* Último bloque (CTA) tras una sección crema (Tree of Change, Collaborate):
+   transición en degradado crema → verde → burdeos, SIN ola, igual que el
+   resto de finales de página. */
+.tree-stages-section + .cta-band,
+.testimonial-section + .cta-band {
+    background: linear-gradient(180deg, var(--cream) 0%, var(--forest) 14%, var(--burgundy) 100%);
 }
 
 /* Pantallas muy pequeñas: evita que el título del hero se recorte */
