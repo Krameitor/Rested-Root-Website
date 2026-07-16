@@ -62,21 +62,46 @@
 }
 
 /* --- Typography --- */
-/* Marsha font — loaded from local fonts directory */
+/* VTC Marsha — heading font (only Bold weight ships; declared as the single normal weight) */
 @font-face {
-    font-family: 'Marsha';
-    src: url('../fonts/marsha.ttf') format('truetype');
+    font-family: 'VTCMarsha';
+    src: url('../fonts/VTCMarsha-Bold.woff2') format('woff2'),
+         url('../fonts/VTCMarsha-Bold.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gowun+Batang:wght@400;700&display=swap');
+/* Nacelle — subtitle / UI font (self-hosted from brand pack) */
+@font-face {
+    font-family: 'Nacelle';
+    src: url('../fonts/Nacelle-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nacelle';
+    src: url('../fonts/Nacelle-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nacelle';
+    src: url('../fonts/Nacelle-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
-/* Hero heading font — Marsha (with Abril Fatface fallback) */
+/* Gowun Batang (body) served from Google Fonts — optimized/subsetted */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+/* Hero heading font — VTC Marsha */
 .font-hero,
 .hero__title {
-    font-family: 'Marsha', 'Abril Fatface', 'Georgia', serif;
+    font-family: 'VTCMarsha', 'Georgia', serif;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 1.05;
@@ -87,7 +112,7 @@
 .font-heading,
 h1,
 h2 {
-    font-family: 'Marsha', 'Abril Fatface', 'Georgia', serif;
+    font-family: 'VTCMarsha', 'Georgia', serif;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 1.05;
@@ -248,9 +273,9 @@ body {
 }
 
 .site-header__logo-img {
-    height: 48px;
+    height: 44px;
     width: auto;
-    max-width: 140px;
+    max-width: 240px;
     object-fit: contain;
     border-radius: 0;
     transition: opacity var(--transition-base), transform var(--transition-base);
@@ -581,7 +606,7 @@ body {
 }
 
 .hero__title {
-    font-family: 'Abril Fatface', serif;
+    font-family: 'VTCMarsha', 'Georgia', serif;
     font-size: var(--fs-hero);
     color: var(--honey);
     margin-bottom: var(--space-md);
@@ -991,9 +1016,10 @@ body {
     font-size: var(--fs-body);
     line-height: 1.7;
     color: var(--cream);
-    margin-bottom: var(--space-lg);
+    margin: 0 auto var(--space-lg);
     max-width: 500px;
     opacity: 0.9;
+    text-align: center;
 }
 
 /* Tree stages mini-grid (inside tree teaser on homepage) */
@@ -1086,7 +1112,7 @@ body {
     color: var(--terra);
     line-height: 1;
     margin-bottom: var(--space-md);
-    font-family: 'Abril Fatface', 'Georgia', serif;
+    font-family: 'VTCMarsha', 'Georgia', serif;
     display: block;
 }
 
@@ -1284,6 +1310,30 @@ body {
 .about-mission__img {
     max-width: 100%;
     height: auto;
+}
+
+/* Home "Our Cooperative" — roots texture across ~3/4 of the cream band */
+.about-mission--home {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-mission__bg-roots {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75%;
+    max-width: 900px;
+    height: auto;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.about-mission--home .container {
+    position: relative;
+    z-index: 1;
 }
 
 /* About values grid — "What Grounds Us" */
@@ -1488,7 +1538,7 @@ body {
 }
 
 .tree-video-placeholder__text {
-    font-family: 'Marsha', 'Abril Fatface', serif;
+    font-family: 'VTCMarsha', 'Georgia', serif;
     font-size: clamp(1.4rem, 3vw, 2rem);
     color: var(--honey);
     margin: var(--space-md) 0 var(--space-sm);
@@ -1660,9 +1710,9 @@ body {
 }
 
 .site-footer__logo-img {
-    height: 60px;
+    height: 96px;
     width: auto;
-    max-width: 80px;
+    max-width: 120px;
     object-fit: contain;
     border-radius: 0;
     /* Color logo shows its own colors — no filter needed */
